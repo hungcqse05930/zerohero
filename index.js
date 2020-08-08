@@ -43,4 +43,6 @@ module.exports = createApp(appOptions)
         app.listen(PORT, () => {
             console.info(`App is running at ${PORT}`)
         })
+    }).catch(error => {
+        console.log(error.message)
     })
