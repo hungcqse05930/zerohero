@@ -20,7 +20,6 @@ const createModels = async ({ dbName, dbUser, dbPass, dbHost, dbSslCa, dbSslCert
     const sequelize = new Sequelize(dbName, dbUser, dbPass, {
         host: dbHost,
         dialect: 'mysql',
-        port: 3003,
         dialectOptions: {
             ssl: {
                 ca: dbSslCa,
