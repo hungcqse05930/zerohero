@@ -37,7 +37,7 @@ const appOptions = {
 }
 
 // createApp now returns a Promise because it is an async func
-createApp(appOptions)
+module.exports = createApp(appOptions)
     .then((app) => {
         // So we need to wrap the `app.listen` inside a `.then`
         app.listen(PORT, () => {
